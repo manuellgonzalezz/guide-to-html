@@ -1,0 +1,200 @@
+<!--GUIA DE ETIQUETAS PARA HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--ETIQUETA META para realizar cambios de codificacion en la pagina-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is a basic guide to html tags">
+    <meta name="author" content="Manuel Gonzalez">
+    <meta name="copyright" content="html">
+    <link rel="stylesheet" href="style3.css">
+    <title>guide to html </title>
+   
+    <meta>
+</head>
+<body>
+    
+    <!--ETIQUETA HEADER INSERTA ENCABEZADO DE PAGINA-->
+    <!--etiqueta nav inserta modo de navegacion en la pagina-->
+
+    <header>
+        <nav>
+            <ul>
+             <li><a href="../index.html"><b>Regreso al Inicio</b></a></li>   
+            </ul>
+        </nav>
+    </header>
+
+    <!--TODOS LOS TITULOS DE TEXTO VAN DESDE EL H1(EL MAS GRANDE) HASTA EL H6(EL MAS CHICO)-->
+    <h1>titulo grande</h1>
+    <h2>titulo mediano</h2>
+    <h3>titulo chico</h3>
+    <h4>titulo mas chico</h4>
+    <h5>titulo diminuto</h5>
+    <h6>titulo mas chiquito que hay</h6>
+
+    <!-- ETIQUETA P DE PARRAFO-->
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus voluptas incidunt velit magni exercitationem voluptatem, laborum in deleniti dolorem aperiam, officia animi quisquam nisi cumque ducimus adipisci quas perspiciatis repellendus.
+    </p>
+
+    <!--ETIQUETA B ES PARA PONER EN NEGRITA EL TEXTO-->
+    <b>texto en negrita</b>
+    
+    <!--ETIQUETA I PARA PONER EL TEXTO EN ITALICA-->
+    <i>texto en italica</i>
+
+    <!--ETIQUETA STRIKE PARA PONER EL TEXTO TACHADO-->
+    <strike> texto tachado</strike>
+
+    <!--ETIQUETA SMALL PARA PONER EL TEXTO CHIQUITO -->
+    <small>texto chiquito</small>
+
+    <!--ETIQUETA A LINK DE REDIRECCION TANTO COMO LOCAL O EXTERNA-->
+
+    <a href="https://www.google.com/search?q=troll+face&tbm=isch&ved=2ahUKEwiZ85Pj_Zr7AhV_hJUCHeB_BTMQ2-cCegQIABAA&oq=troll&gs_lcp=CgNpbWcQARgAMgcIABCxAxBDMgcIABCxAxBDMgcIABCxAxBDMgQIABBDMgQIABBDMgcIABCxAxBDMgQIABBDMggIABCABBCxAzIECAAQQzIECAAQQzoECCMQJzoFCAAQgARQrvgFWOT-BWCeiQZoAXAAeACAAUyIAZcDkgEBNpgBAKABAaoBC2d3cy13aXotaW1nwAEB&sclient=img&ei=92doY9mbEf-I1sQP4P-VmAM&bih=968&biw=960&client=ubuntu">
+        redireccion externa
+    </a>
+    <br>
+    <a href="../binder1/index2.html">
+        redireccion local 
+    </a>
+
+    <!--ETIQUETA BR PARA COMPLETAR LA LINEA(PUNTO APARTE)-->
+
+    <br>
+    <br>
+    <b>salchicha con pure</b>
+    <br>
+    <br>
+
+    <!--ETIQUETA TARGET PARA ABRIR LA REDIRECCION EN OTRA PAGINA -->
+    <p>
+        haz <a href="https://www.google.com/" target="_blank">click aqui</a>para ir a google
+    </p>
+
+    <!--ETIQUETA UL PARTA HACER LISTAS DESORDENADAS(EJ:LISTAS DE COMPRAS)-->
+    <!--<ul>
+            <li>.....</li>
+        </ul>
+    -->
+
+    <ul>
+        <li>leche</li>
+        <li>harina</li>
+        <li>huevo</li>
+        <li>pan</li>
+        
+    </ul>
+
+    <!--ETIQUETA OL PARA HACER LISTAS EN ORDEN NUMERICO-->
+
+    <ol>
+        <li>dulce de leche</li>
+        <li>queso</li>
+        <li>salchicha</li>
+        <li>pan </li>
+    </ol>
+
+    <br>
+
+    <!--ETIQUETA IMG PARA INSERTAR UNA IMAGEN-->
+    <!--height:altura...........widght:ancho-->
+
+    <p>
+        insertando <b>imagen</b>:
+    </p>
+    <img src="oso-polar.png" height="200px">
+
+    <!--ETIQUETA VIDEO PARA INSERTAR UN VIDEO-->
+
+    <video src="Techo - 877.mp4" controls height="200px">
+        hola
+    </video>
+    
+    <br>
+
+    <!--ETIQUETA AUDIO PARA INSERTAR UN AUDIO JEJEJE-->
+
+    <audio src="Techo - 877.mp4" controls>
+        lalala
+    </audio>
+
+    <br>
+    <br>
+    <br>
+
+    <!--ETIQUETA DIV PARA DIVIDIR/SEPARAR CONTENIDO-->
+
+    <div>
+        <h2> listas </h2>
+        <p>
+            hello <b>people</b>
+        </p>
+    </div>
+
+    <!--ETIQUETA FORM PARA INSERTAR FORMULARIOS-->
+
+    <form method="post">
+        <input type="text" required="" value="i'm stronger">
+        <input type="number">
+        <input type="password" required=" ">
+        <input type="email">
+        <input type="color">
+        <input type="range" min="1" max="5">
+        <input type="date">
+        <input type="time">
+        <input type="button" value="Boton">
+        <input type="submit">
+        <input type="search">
+        <textarea></textarea>
+    </form>
+
+    <br><br><br><br><br>
+    
+    <!--ETIQUETA ARTICLE Y SECTION INSERTA EL ARTICULO PARA ORDENAR EL ESQUEMA DE WEB-->
+
+    <article>
+        <section>
+            <h5>Lorem, ipsum dolor.</h5>
+            <h6>Lorem, ipsum.</h6>
+        </section>
+    </article>
+
+    <!--ETIQUETA ASIDE ESQUEMA AL COSTADO DE PAGINA-->
+    
+    <aside>
+        <h4>lalalalal</h4>
+    </aside>
+
+    <!--ETIQUETA FOOTER ES EL PIE DE PAGINA-->
+
+    <footer>
+        <h5><b>pie de pagina</b></h5>
+        <a href="https://www.facebook.com/manuel.gonzaleztabel/" target="_blank">contacto facebook</a>
+    </footer>
+
+    <!--ETIQUETA TABLAS-->
+
+    <table>
+        <tr>
+            <td><b>lala1</b></td>
+            <td><b>lala2</b></td>
+            <td><b>lala3</b></td>
+        </tr>
+        <tr>
+            <td>leleA</td>
+            <td>leleB</td>
+            <td>leleC </td>
+        </tr>
+        <tr>
+            <td>lili-</td>
+            <td>lili*</td>
+            <td>lili+</td>
+        </tr>
+    </table>
+
+</body>
+</html>
