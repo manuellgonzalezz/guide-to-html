@@ -1,0 +1,93 @@
+ /*selector{
+    propiedad: valor
+ }*/
+
+/*-------------------------------especifidad-------------------------------*/
+/* (*) selector universal:selecciona todos los elementos*/
+/*selector !important le da priorida ante tod evitando efecto cascada*/
+
+/* (.+titulo de clase)selector por clase:modifica a solo los que tienen el tipo clase(class) en html*/
+.titulo-h1{
+    color: rgb(100, 29, 167);
+}
+
+/* (h1,input,button,etc.) selector de tipo:slecciona la etiquetas aparte y las modifica*/
+h2{
+    color: rgb(24, 128, 93);
+}
+
+/*(#+id)selector por ID:modifica a las etiquetas con id solamente en html{slolo se puede usar una vez ya que es unico como una identificacion}*/
+#id1{
+    color: rgb(156, 4, 4);
+}
+
+/*(atributo[lala]+valor["lele"])selector por atributo:modifica la etiquea dandole un atributo cualquiera en html{input pepe="papa"}*/
+[lala="lele"]{
+    color: rgb(2, 134, 134);
+}
+
+/*(ej:h1+class="lal"+p)selector de manera descendiente:modifica las etiquetas sleccionando de manera descendiente por etiqueta+atributos*/
+.class-h4 b{
+    color: rgb(131, 189, 15);
+}
+.class-h4 b span{
+    color: green;
+}
+
+/*(etiqueta o atributo o clase o valor +:hover)selector de manera pseudo-clases:modificando la etiqueta o atributo con el comando :hover*/
+strike:hover{
+    color: magenta;
+}
+
+/*-------------------------------especifidad-------------------------------*/
+
+/*---------------------------------metodologia bem---------------------------*/
+
+/*para seleccionar usamos --active[o texto a eleccion] a lo ultimo en la linea de codigo en html{<input type="text" class="form__input--active">}*/
+
+.form__input{
+    color: rgb(69, 69, 138);
+}
+.form__input--active{
+    color: rgb(212, 33, 212);
+}
+
+/*---------------------------------metodologia bem---------------------------*/
+
+/*--------------------------------------unidades-----------------------------*/
+
+/*(font-size):unnidad de medida para la letra{px.cm.pt,etc}[meiddas relativas rem y em]*/
+.units{
+    font-size: 20px;
+}
+.units--1{
+    font-size: 1em;
+}
+
+/*(width):mide el total para ocupar el largo de la pantalla[width:50vw]*/
+/*(height):mide el total para ocupar el ancho de la pantalla[heidht: 50vh]*/
+.units--2{
+    font-size: 1em;
+    background-color: aquamarine;
+    width: 50vw;
+    height: 3vh;
+}
+
+/*--------------------------------------unidades-----------------------------*/
+
+/*---------------------------------propiedades de texto----------------------*/
+
+/*(font-family):tipografia de letra[buscar en google por mas tipografias]*/
+/*(line-height):ocupa el tamaño entre letras como un br por ejemplo{le podemos dar un valor hasta 6}*/
+/*(font-weight):modifica el grosor de la letra*/
+/*():*/
+
+.units--3{
+    font-size: 2em;
+    font-family: "Sofia", sans-serif;
+    line-height: 1.5;
+    font-weight: 1 00;
+    font-stretch: normal;
+    font-variant: normal;
+}
+
